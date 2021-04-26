@@ -1,7 +1,13 @@
+import React from "react";
 
-const Quiz = ({typeObj}) => {
+const Quiz = ({typeObj, setTypeObj}) => {
     return (
-        <div>Quiz</div>
+        <>
+            <div>Quiz</div>
+            <div>
+            {typeObj ? `${typeObj.questionNo}` : '' }
+            </div>
+        </>
     )
 }
 

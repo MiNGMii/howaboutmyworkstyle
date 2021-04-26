@@ -5,7 +5,7 @@ function App() {
   const[typeObj, setTypeObj] = useState(null);
 
   return (
-    <AppRouter typeObj={typeObj} />
+    <AppRouter typeObj={typeObj} setTypeObj={setTypeObj} />
   );
 }
 
