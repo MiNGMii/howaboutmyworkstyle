@@ -1,8 +1,10 @@
+import AppRouter from "components/Router";
 
 function App() {
+  const[typeObj, setTypeObj] = useState(null);
+
   return (
-    <div className="App">
-    </div>
+    <AppRouter typeObj={typeObj} />
   );
 }
 
