@@ -1,7 +1,7 @@
 
 const Result = ({typeObj}) => {
     return (
-        <div></div>
+        <div>Result</div>
     )
 }
 
