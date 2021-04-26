@@ -1,6 +1,7 @@
 import { useHistory } from "react-router-dom"
 
 const Main = ({setTypeObj}) => {
+    let history = useHistory();
 
     const onStartBtnClick = async (event) => {
         setTypeObj({
@@ -11,8 +12,7 @@ const Main = ({setTypeObj}) => {
             FT: 0,
             PJ: 0,
         });
-
-        let history = useHistory();
+        
         history.push('/quiz')
     }
 
