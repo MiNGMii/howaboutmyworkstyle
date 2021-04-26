@@ -1,3 +1,4 @@
+import { useHistory } from "react-router-dom"
 
 const Main = ({setTypeObj}) => {
 
@@ -11,7 +12,8 @@ const Main = ({setTypeObj}) => {
             PJ: 0,
         });
 
-        window.location.assign('/quiz')
+        let history = useHistory();
+        history.push('/quiz')
     }
 
     return (
