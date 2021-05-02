@@ -10,7 +10,7 @@ function AppRouter ({typeObj, setTypeObj}) {
             <Switch>
                 <div style={{maxWidth: 890, width: "100%", margin: "0 auto", marginTop: 80, display: "flex", justifyContent: "center",}}>
                     <Route exact path="/">
-                        <Main setTypeObj={setTypeObj} />
+                        <Main />
                     </Route>
                     <Route exact path="/quiz">
                         <Quiz typeObj={typeObj} setTypeObj={setTypeObj} />

@@ -1,18 +1,10 @@
 import { useHistory } from "react-router-dom"
 
-const Main = ({setTypeObj}) => {
+const Main = () => {
     let history = useHistory();
 
     const onStartBtnClick = async (event) => {
-        setTypeObj({
-            typeState: '',
-            questionNo: 1,
-            IE: 0,
-            NS: 0,
-            FT: 0,
-            PJ: 0,
-        });
-        
+        event.preventDefault();
         history.push('/quiz')
     }
 
